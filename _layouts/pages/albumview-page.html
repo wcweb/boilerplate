@@ -1,0 +1,449 @@
+{% include boil/boil-layout-head.html %}
+{{ content }}
+
+
+  
+
+           <div class="row">
+               <div class="span16">
+
+
+                           <div class="breadcrumb">
+                               <span class="icon"></span>
+
+
+                               <span>
+                                   <a href="http://localhost:15148/index.html" title="首页">首页</a>
+
+                                   &gt;
+         
+                               </span>
+
+                               <span>
+                                   <a href="http://localhost:15148/albumlist.html" title="专辑资源">专辑资源</a>
+
+                                   &gt;
+         
+                               </span>
+
+                               <span class="active">
+                                   <a title="各科目中考重点解答集">各科目中考重点解答集</a>
+
+                               </span>
+
+                           </div>
+
+               </div>
+               <!-- /span16 -->
+           </div>
+           <!-- /row -->
+           <div class="row">
+               <div class="span16 ">
+                   <div class="showInfo well">
+
+
+                       <h3 style="FONT-SIZE: 140%" class="headline">课程专辑:  
+ 各科目中考重点解答集
+ <b class="pull-right">
+
+
+     <span id="GetPVHistoryCollectb9605448b3fd4056b7e392dd7985b6ff">
+         <a href="#收藏" class="btn add_fav" onclick="PVHistoryCollectAdd('b9605448b3fd4056b7e392dd7985b6ff','Album','3');">点击收藏</a>
+
+
+         <script type="text/javascript">
+             function PVHistoryCollectAdd(pkid, pvTarget, pvType) {
+                 $.ajax(
+                 {
+                     cache: false,
+                     type: "POST",
+                     url: Global.Site + "/Ajax.aspx?AVA.ResourcesPlatform.Ajax.ClientAjax.PVHistoryAdd",
+                     data: "PKId=" + pkid + "&PVTarget=" + pvTarget + "&PVType=" + pvType,
+                     async: true,
+                     dataType: 'json',
+                     success: function (result) {
+                         GetPVHistoryCollectb9605448b3fd4056b7e392dd7985b6ff();
+                     },
+                     beforeSend: function () {
+                     },
+                     complete: function () {
+                     },
+                     error: function (XMLHttpRequest, textStatus, errorThrown) {
+                         var message = XMLHttpRequest.responseText;
+                         Global.Error(message);
+                     }
+                 });
+             }
+
+             function PVHistoryDelete(guid) {
+                 if (!confirm("取消收藏吗?")) {
+                     return;
+                 }
+                 $.ajax(
+                 {
+                     cache: false,
+                     type: "POST",
+                     url: Global.Site + "/Ajax.aspx?AVA.ResourcesPlatform.Ajax.ClientAjax.PVHistoryDelete",
+                     data: "PKId=" + guid,
+                     async: true,
+                     dataType: 'json',
+                     success: function (result) {
+                         GetPVHistoryCollectb9605448b3fd4056b7e392dd7985b6ff();
+                     },
+                     beforeSend: function () {
+                     },
+                     complete: function () {
+                     },
+                     error: function (XMLHttpRequest, textStatus, errorThrown) {
+                         var message = XMLHttpRequest.responseText;
+                         Global.Error(message);
+                     }
+                 });
+             }
+
+         </script>
+     </span>
+     <script type="text/javascript">
+         $(function () {
+             GetPVHistoryCollectb9605448b3fd4056b7e392dd7985b6ff();
+         });
+     </script>
+     <script type="text/javascript">
+
+         function GetPVHistoryCollectb9605448b3fd4056b7e392dd7985b6ff() {
+             $("#GetPVHistoryCollectb9605448b3fd4056b7e392dd7985b6ff").html("...");
+             var param = "PKId=b9605448b3fd4056b7e392dd7985b6ff&PVTarget=Album&PVType=3";
+             Global.HtmlControl("/Control//PV/PVHistoryCollectData", param, null, function (json) {
+                 if (json != null) {
+                     $("#GetPVHistoryCollectb9605448b3fd4056b7e392dd7985b6ff").html(json.Html);
+                 }
+             });
+         }
+
+         $(function () {
+             GetPVHistoryCollectb9605448b3fd4056b7e392dd7985b6ff();
+         });
+     </script>
+
+ </b>
+                       </h3>
+                       <div class="album_infos">
+                           <div class="vediodiv">
+                               <img src="http://localhost:15148/CSS/zh-CN/DefaultTheme/DefaultImg.png" title="各科目中考重点解答集" class="" onerror="try{this.src=&quot;http://localhost:15148/CSS/zh-CN/DefaultTheme/DefaultImg.png&quot;}catch(ex){};" style="width: 214px; height: 120px;"></div>
+                           <div id="total_chart" style="width: 200px; height: 150px;" class="pull-right info_chart" data-highcharts-chart="0">
+                               <div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 200px; height: 150px; text-align: left; line-height: normal; z-index: 0; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif; font-size: 12px;">
+                                   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="150">
+                                       <desc>Created with Highcharts 3.0.1</desc><defs><clipPath id="highcharts-1"><rect rx="0" ry="0" fill="none" x="0" y="0" width="9999" height="150"></rect>
+                                       </clipPath>
+                                           <clipPath id="highcharts-2">
+                                               <rect fill="none" x="0" y="0" width="92" height="123"></rect>
+                                           </clipPath>
+                                       </defs><rect rx="5" ry="5" fill="#f5f5f5" x="0" y="0" width="200" height="150"></rect><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 127.5 10 L 127.5 102" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path>
+                                           <path fill="none" d="M 189.5 10 L 189.5 102" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path>
+                                           <path fill="none" d="M 66.5 10 L 66.5 102" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path>
+                                       </g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 66 56.5 L 61 56.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                                           <path fill="none" d="M 66 79.5 L 61 79.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                                           <path fill="none" d="M 66 101.5 L 61 101.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                                           <path fill="none" d="M 66 33.5 L 61 33.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path>
+                                           <path fill="none" d="M 66 10.5 L 61 10.5" stroke="#C0D0E0" stroke-width="1"></path>
+                                           <path fill="none" d="M 66.5 10 L 66.5 102" stroke="#C0D0E0" stroke-width="1" zIndex="7" visibility="visible"></path>
+                                       </g><g class="highcharts-axis" zIndex="2"><text x="190" y="133" style="font-family: &quot; Lucida Grande&quot; , &quot; Lucida Sans Unicode&quot; , Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #4d759e; font-weight: bold; fill: #4d759e;" zIndex="7" text-anchor="end" visibility="visible"><tspan x="190">人次</tspan>
+                                       </text>
+                                       </g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(190,102) rotate(90) scale(-1,1) scale(1 1)" style="" width="124" height="92" clip-path="url(#highcharts-2)"><rect fill="#2f7ed8" x="74.5" y="123.5" width="11" height="0" stroke="#FFFFFF" stroke-width="1" rx="0" ry="0"></rect>
+                                           <rect fill="#2f7ed8" x="51.5" y="30.5" width="11" height="93" stroke="#FFFFFF" stroke-width="1" rx="0" ry="0"></rect>
+                                           <rect fill="#2f7ed8" x="28.5" y="123.5" width="11" height="0" stroke="#FFFFFF" stroke-width="1" rx="0" ry="0"></rect>
+                                           <rect fill="#2f7ed8" x="5.5" y="123.5" width="11" height="0" stroke="#FFFFFF" stroke-width="1" rx="0" ry="0"></rect>
+                                       </g>
+                                           <g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(190,102) rotate(90) scale(-1,1) scale(1 1)" width="124" height="92"></g>
+                                       </g><g class="highcharts-data-labels highcharts-tracker" visibility="visible" zIndex="6" transform="translate(66,10) scale(1 1)" style=""><g zIndex="1" style="cursor: default;" transform="translate(1,2)" visibility="inherit"><text x="3" y="15" style="font-family: &quot; Lucida Grande&quot; , &quot; Lucida Sans Unicode&quot; , Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #666; line-height: 14px; fill: #666;" zIndex="1"><tspan x="3">0</tspan>
+                                       </text>
+                                       </g>
+                                           <g zIndex="1" style="cursor: default;" transform="translate(94,25)" visibility="inherit">
+                                               <text x="3" y="15" style="font-family: &quot; Lucida Grande&quot; , &quot; Lucida Sans Unicode&quot; , Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #666; line-height: 14px; fill: #666;" zIndex="1">
+                                                   <tspan x="3">3</tspan>
+                                               </text>
+                                           </g>
+                                           <g zIndex="1" style="cursor: default;" transform="translate(1,48)" visibility="inherit">
+                                               <text x="3" y="15" style="font-family: &quot; Lucida Grande&quot; , &quot; Lucida Sans Unicode&quot; , Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #666; line-height: 14px; fill: #666;" zIndex="1">
+                                                   <tspan x="3">0</tspan>
+                                               </text>
+                                           </g>
+                                           <g zIndex="1" style="cursor: default;" transform="translate(1,71)" visibility="inherit">
+                                               <text x="3" y="15" style="font-family: &quot; Lucida Grande&quot; , &quot; Lucida Sans Unicode&quot; , Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #666; line-height: 14px; fill: #666;" zIndex="1">
+                                                   <tspan x="3">0</tspan>
+                                               </text>
+                                           </g>
+                                       </g><g class="highcharts-legend" zIndex="7"><rect rx="5" ry="5" fill="none" x="0.5" y="0.5" width="7" height="7" stroke="#909090" stroke-width="1" visibility="hidden"></rect>
+                                           <g zIndex="1" clip-path="url(#highcharts-1)">
+                                               <g></g>
+                                           </g>
+                                       </g><g class="highcharts-axis-labels" zIndex="7"><text x="58" y="27.1" style="font-family: &quot; Lucida Grande&quot; , &quot; Lucida Sans Unicode&quot; , Verdana, Arial, Helvetica, sans-serif; font-size: 11px; width: 42px; color: #666; cursor: default; line-height: 14px; fill: #666;" text-anchor="end" opacity="1"><tspan x="58">视频数量</tspan>
+                                       </text>
+                                           <text x="58" y="50.1" style="font-family: &quot; Lucida Grande&quot; , &quot; Lucida Sans Unicode&quot; , Verdana, Arial, Helvetica, sans-serif; font-size: 11px; width: 42px; color: #666; cursor: default; line-height: 14px; fill: #666;" text-anchor="end" opacity="1">
+                                               <tspan x="58">总播放</tspan>
+                                           </text>
+                                           <text x="58" y="73.1" style="font-family: &quot; Lucida Grande&quot; , &quot; Lucida Sans Unicode&quot; , Verdana, Arial, Helvetica, sans-serif; font-size: 11px; width: 42px; color: #666; cursor: default; line-height: 14px; fill: #666;" text-anchor="end" opacity="1">
+                                               <tspan x="58">评论</tspan>
+                                           </text>
+                                           <text x="58" y="96.1" style="font-family: &quot; Lucida Grande&quot; , &quot; Lucida Sans Unicode&quot; , Verdana, Arial, Helvetica, sans-serif; font-size: 11px; width: 42px; color: #666; cursor: default; line-height: 14px; fill: #666;" text-anchor="end" opacity="1">
+                                               <tspan x="58">收藏</tspan>
+                                           </text>
+                                       </g><g class="highcharts-axis-labels" zIndex="7"><text x="70" y="116" style="font-family: &quot; Lucida Grande&quot; , &quot; Lucida Sans Unicode&quot; , Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #666; cursor: default; line-height: 14px; fill: #666;" text-anchor="middle" opacity="1"><tspan x="70">0</tspan>
+                                       </text>
+                                           <text x="128" y="116" style="font-family: &quot; Lucida Grande&quot; , &quot; Lucida Sans Unicode&quot; , Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #666; cursor: default; line-height: 14px; fill: #666;" text-anchor="middle" opacity="1">
+                                               <tspan x="128">2</tspan>
+                                           </text>
+                                           <text x="186" y="116" style="font-family: &quot; Lucida Grande&quot; , &quot; Lucida Sans Unicode&quot; , Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #666; cursor: default; line-height: 14px; fill: #666;" text-anchor="middle" opacity="1">
+                                               <tspan x="186">4</tspan>
+                                           </text>
+                                       </g><g class="highcharts-tooltip" zIndex="8" style="cursor: default; padding: 0; white-space: nowrap;" visibility="hidden"><rect rx="3" ry="3" fill="none" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></rect>
+                                           <rect rx="3" ry="3" fill="none" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></rect>
+                                           <rect rx="3" ry="3" fill="none" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></rect>
+                                           <rect rx="3" ry="3" fill="rgb(255,255,255)" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85"></rect>
+                                           <text x="8" y="21" style="font-family: &quot; Lucida Grande&quot; , &quot; Lucida Sans Unicode&quot; , Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #333333; fill: #333333;" zIndex="1"></text>
+                                       </g></svg></div>
+                           </div>
+
+                           <div class="description">
+                               <ul class="baseinfo ">
+
+                                   <li class="area">
+                                       <label>
+                                           网站:
+   
+                                       </label>
+                                       <a href="http://localhost:15148/album_aAVA.html" title="教育视频网" target="_blank">教育视频网</a>
+                                   </li>
+                                   <li>
+                                       <label>
+                                           作者:
+   
+                                       </label>
+                                       <a href="http://localhost:15148/show/GZ_jingling.html" title="教育视频网" target="_blank">老师</a>
+                                   </li>
+                                   <li>
+                                       <label>
+                                           级别:
+   
+                                       </label>
+                                       专家讲座
+                                   </li>
+
+                               </ul>
+
+                               <script>
+                                   var userSeries = {
+                                       chart: {
+                                           type: 'bar',
+                                           backgroundColor: '#f5f5f5',
+                                           renderTo: 'total_chart'
+                                           // defaultSeriesType: 'column'
+
+                                       },
+                                       title: {
+                                           text: ''
+                                       },
+                                       xAxis: {
+                                           categories: ['视频数量', '总播放', '评论', '收藏']
+
+                                       },
+                                       yAxis: {
+                                           min: 0,
+                                           title: {
+                                               text: '人次',
+                                               align: 'high'
+                                           },
+                                           labels: {
+                                               overflow: 'justify'
+                                           },
+                                       },
+
+                                       tooltip: {
+                                           valueSuffix: ' 人次'
+                                       },
+                                       plotOptions: {
+                                           bar: {
+                                               dataLabels: {
+                                                   enabled: true
+                                               }
+                                           }
+                                       },
+                                       legend: {
+
+                                       },
+                                       credits: {
+                                           enabled: false
+                                       },
+
+                                       series: [
+                                        {
+                                            name: '基本概况',
+                                            data: [0, 3, 0, 0
+                                            ],
+                                            showInLegend: false
+                                        }
+
+                                       ]
+                                   };
+                                   $(document).ready(function () {
+
+                                       var hc = new Highcharts.Chart(userSeries);
+                                   });
+                               </script>
+
+                           </div>
+                           <div class="intro ">
+                           </div>
+                       </div>
+
+                   </div>
+               </div>
+               <!-- /span16 -->
+           </div>
+           <div class="row">
+               <div class="span16">
+
+
+                   <div class="box mbox">
+                       <div class="head">
+                           <div class="title">
+                               课例视频 
+                           </div>
+
+                       </div>
+                       <div class="videolist videolist body ">
+                       </div>
+                       <!-- .body -->
+                   </div>
+               </div>
+               <!-- /span16 -->
+           </div>
+           <div class="row">
+               <div class="span16">
+
+                   <div id="commentArea" class="commentArea">
+
+
+                       <div class="box mbox">
+                           <div class="head">
+                               <div class="title">
+                                   发表评论
+                               </div>
+
+                           </div>
+                           <div class="body">
+                               <div class="commentArea well well-no-border" id="Div1">
+                                   <div class="commentAction">
+                                       <form id="frmComment" action="" onsubmit="return false;">
+                                           <div class="commentTextArea">
+                                               <textarea class="defaultext" cols="40" rows="2" name="CommentText" style="width: 98%;" placeholder="留下您的评论"></textarea>
+                                           </div>
+                                           <div class="toolbar">
+                                               <div class="action">
+                                                   <input type="hidden" name="PKId" value="b9605448b3fd4056b7e392dd7985b6ff" style="display: none;">
+                                                   <input type="hidden" name="TargetType" value="Album" style="display: none;">
+                                               </div>
+                                               <div class="clear"></div>
+                                           </div>
+                                           <div class="sub_comment pull-right">
+                                               <input type="button" value="发表评论" validatorgroup="CommentAdd" onclick="CommentAddClient(this)">
+                                           </div>
+                                       </form>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                       </div>
+                       <script type="text/javascript">
+
+                           //验证控件
+                           $.validator.initConfig({ validatorGroup: "CommentAdd", form: "#frmComment", alertMessage: true, showMessage: false });
+
+                           //评论
+                           $("#frmComment [name=CommentText]").formValidator({
+                               validatorGroup: "CommentAdd",
+                               rules:
+                               {
+                                   required: null
+                               },
+                               message:
+                               {
+                                   required: "请输入评论内容"
+                               }
+                           });
+                       </script>
+                       <script type="text/javascript">
+                           function CommentAddClient(send) {
+                               $.ajax(
+                               {
+                                   cache: false,
+                                   type: "POST",
+                                   url: Global.Site + "/Ajax.aspx?AVA.ResourcesPlatform.Ajax.ClientAjax.CommentAdd",
+                                   data: Global.GetFormValue($("#frmComment")),
+                                   async: true,
+                                   dataType: 'json',
+                                   success: function (result) {
+                                       $(send).val("发表评论");
+                                       alert("评论成功")
+                                       Global.Disabled(send, false);
+                                       $("#frmComment [name=CommentText]").val("");
+                                       GetCommentList(1);
+                                   },
+                                   beforeSend: function () {
+                                       $(send).val("提交评论...");
+                                       Global.Disabled(send, true);
+                                   },
+                                   complete: function () {
+                                   },
+                                   error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                       $(send).val("发表评论");
+                                       Global.Disabled(send, false);
+                                       var message = XMLHttpRequest.responseText;
+                                       Global.Error(message);
+                                   }
+                               });
+                           }
+                       </script>
+
+
+
+                       <div class="box mbox">
+                           <div class="head">
+                               <div class="title">
+                                   评论列表<em class="num" id="CommentAllnum"></em>
+                               </div>
+                           </div>
+
+                           <div class="body ">
+                               <div class="count_wrapper">
+                                   <div class="count_comment">
+                                   </div>
+                               </div>
+                               <div class="comments" id="CommentBodyList">
+                                   <script type="text/javascript">
+                                       $("#commentAreaTitle").hide();
+                                   </script>
+                               </div>
+                           </div>
+                       </div>
+                       <script type="text/javascript">
+
+                           function GetCommentList(pageIndex) {
+                               $("#CommentBodyList").html("正在加载评论...");
+                               var pageRecordSize = 12
+                               var param = "PageIndex=" + pageIndex;
+                               param += "&PageRecordSize=" + pageRecordSize + "&TargetType=Album&TargetGuid=b9605448b3fd4056b7e392dd7985b6ff";
+                               Global.HtmlControl('/Themes/DefaultTheme/Control/Comment/CommentListData', param, null, function (json) {
+                                   if (json != null) {
+                                       $("#CommentBodyList").html(json.Html);
+                                   }
+                               });
+                           }
+                           GetCommentList(1); //开始显示第一页
+                       </script>
+
+                   </div>
+               </div>
+           </div>
+

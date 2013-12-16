@@ -1,0 +1,254 @@
+/* here is box.less */
+
+
+/* 
+*  Well
+*/
+.well {
+	border: 1px solid #cdcdcd;
+	.border-radius(0);
+	.box-shadow(0);
+}
+.well-no-border {
+border: none;
+padding: 5px;
+margin: 0px;
+}
+
+.well-no-padding {
+padding: 0px;
+}
+
+
+
+.well .p_title .title {
+font-size: 16px;
+}
+
+
+
+
+/* 
+*  Box Panels
+*/
+
+.box {
+	overflow: hidden; // for pagination float;
+	margin: 10px auto;
+	border: 1px solid #cbcbcb;
+	background-color: #f9f9f9;
+}
+
+.box .head {
+/*  background-color: #f9f9f9;
+background-image: -moz-linear-gradient(top, #ffffff, #f0f0f0);
+background-image: -ms-linear-gradient(top, #ffffff, #f0f0f0);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f0f0f0));
+background-image: -webkit-linear-gradient(top, #ffffff, #f0f0f0);
+background-image: -o-linear-gradient(top, #ffffff, #f0f0f0);
+background-image: linear-gradient(top, #ffffff, #f0f0f0);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=0);
+background-color: #f9f9f9;
+background-image: -moz-linear-gradient(top, #ffffff, #f0f0f0);
+background-image: -ms-linear-gradient(top, #ffffff, #f0f0f0);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f0f0f0));
+background-image: -webkit-linear-gradient(top, #ffffff, #f0f0f0);
+background-image: -o-linear-gradient(top, #ffffff, #f0f0f0);
+background-image: linear-gradient(top, #ffffff, #f0f0f0);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=0);
+border: 1px solid #cbcbcb;
+border-bottom: 1px solid #cbcbcb;*/
+line-height: 36px;
+height: 36px;
+background: url("img/images/box_head_bg.png") repeat;
+color: #fff;
+}
+
+.box .body {
+/*  padding-top:20px;*/
+min-height: 150px;
+/*  background-color: #f9f9f9;
+background-image: -moz-linear-gradient(top, #ffffff, #f0f0f0);
+background-image: -ms-linear-gradient(top, #ffffff, #f0f0f0);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f0f0f0));
+background-image: -webkit-linear-gradient(top, #ffffff, #f0f0f0);
+background-image: -o-linear-gradient(top, #ffffff, #f0f0f0);
+background-image: linear-gradient(top, #ffffff, #f0f0f0);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=0);
+*/
+}
+
+.box .body.videolist {
+/*min-height: 440px;*/
+}
+
+.box form {
+margin: 0;
+padding: 5px;
+}
+
+
+
+.mbox .head {
+/*  height: 21.599999999999998px;*/
+line-height: 36px;
+height: 36px;
+background-repeat: repeat-x;
+/*
+border-bottom: 2px solid #0064cd;
+-webkit-border-radius: 10px 10px 0 0;
+-moz-border-radius: 10px 10px 0 0;
+border-radius: 10px 10px 0 0;*/
+}
+
+.box .head .title,
+.mbox .head .title {
+text-indent: 18px;
+float: left;
+font-weight: bold;
+width: 160px;
+height: 36px;
+line-height: 30px;
+}
+
+.mbox .head .title {
+background: url("img/images/box_head.png") no-repeat right center;
+}
+
+.box .head .title a,
+.mbox .head .title a,
+.mbox .head.caption .title a {
+/*color: #7f151a;*/
+color: #fff;
+}
+
+.box .head .more,
+.mbox .head .more {
+font-size: 12px;
+line-height: 30px;
+float: right;
+margin-right: 10px;
+}
+
+.box .head .more a,
+.mbox .head .more a {
+color: #333;
+text-decoration: none;
+}
+
+.box .head .more a:hover,
+.mbox .head .more a:hover {
+color: #fff;
+text-decoration: underline;
+}
+
+.mbox .head .tabs > li {
+margin-bottom: -2px;
+}
+
+.mbox .head .tabs > li a {
+line-height: 24px;
+}
+
+.mbox .head .tabs > li a:hover {
+text-decoration: none;
+}
+
+.mbox .head .tabs > li .active > a {
+background-color: #cbcbcb;
+border-bottom-color: transparent;
+}
+
+.mbox .head .tabs > li .active > a:hover {
+background-color: #ffffff;
+border-bottom-color: transparent;
+}
+
+.mbox .body {
+padding-top: 10px;
+}
+
+.mbox .foot {
+clear: both;
+}
+
+.mbox .pill-content {
+background-color: transparent;
+border: none;
+}
+
+
+
+.catalog {
+width: 300px;
+}
+
+.box .head .caption .catalog,
+.catalog {
+position: relative;
+/*  float: right;*/
+margin-left: 10px;
+}
+
+.caption {
+/*  margin-left: 18px;*/
+}
+.box .head .caption .catalog li {
+display: inline;
+bottom: -5px;
+}
+
+
+.nBox h3 {
+font-size: 18px;
+}
+
+.nBox .head {
+border: none;
+/*border-bottom: 2px solid #7F5215;*/
+height: 30px;
+color: #FFF;
+}
+
+
+.nbox .head .title {
+width: 60%;
+text-align: left;
+}
+
+.nBox .body {
+clear: both;
+/*border-top: none;*/
+}
+
+.body .row {
+margin-left: 0px;
+}
+
+.body .span4 {
+margin-left: 10px;
+width: 210px;
+}
+
+.no-box .head .caption {
+float: left;
+margin-right: 5px;
+}
+
+.no-box .head .extend {
+float: right;
+}
+
+.no-box {
+margin-bottom: 15px;
+}
+
+
+.items ul {
+float: left;
+margin-left: 5px;
+}
+

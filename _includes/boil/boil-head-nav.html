@@ -1,0 +1,88 @@
+<header id="top">
+    <div id="header">
+        <div class=" header-top ">
+            <!-- container -->
+            <div class="row">
+                <div class=" banner">
+                    <!-- span16 -->
+                    <div class=" container  ">
+                        <a href="http://localhost:15148/index.html">
+                            <img src="img/images/logo.png" title="">
+                        </a>
+                        <ul class="wellcome_tip">
+                            <li style="" class="logpre">
+                                <a href="http://localhost:15148/signup.html" title="注册">注册</a> | <a id="headerLogin" href="#login" title="登录" onclick="document.getElementById('frmMiniLogin').submit();return false;">登录</a>
+                            </li>
+
+                            <li class="logafter " style="display: none;">欢迎, <a href="http://localhost:15148/my/index.html"></a>&nbsp; <a href="http://localhost:15148/logout.html" title="[注销]">[注销]</a></li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="">
+                    <!-- span16 -->
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="container">
+                                <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span></a>
+                                <div class="nav-collapse">
+                                    <ul id="HeaderMenuData" class="nav">
+
+
+                                        <li class="">
+                                            <a href="{{ post.base_url }}" title="首页">首页</a></li>
+                                            {% for post in site.posts %}
+                                              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                                            {% endfor %}
+
+                                    </ul>
+                                    <ul class="nav pull-right">
+                                        <li>
+                                            <form id="frmMiniLogin" class="navbar-search " method="post" action="http://localhost:15148/login.html" style="display: none;">
+                                                <input type="hidden" name="SRC" value="/Album.aspx" style="display: none;">
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <form method="post" class="navbar-search " action="http://localhost:15148/proxy.html" id="frmHeadSearch">
+                                                <input type="hidden" name="Key" value="SearchAlbum" style="display: none;">
+                                                <input type="hidden" name="Sort" value="1" style="display: none;">
+                                                <input type="text" name="SearchKeyWord" class="search-query span2" placeholder="Search">
+                                                <input type="submit" value="查询" style="display: none;">
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.nav-collapse -->
+                            </div>
+                        </div>
+                        <!-- /navbar-inner -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="flash_messages alert" style="display: block;">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <p>系统未找到加密狗 当前系统未注册，将在2013-12-02 12:20:58停止试用</p>
+</div>
+
+<script type="text/javascript">
+    //判断登录状态
+    if ($.cookie("UserCodeResourcesPlatform") != null && $.cookie("ParentCodeResourcesPlatform") != null) {
+        $(".logpre").hide();
+        $(".logafter").show();
+        $(".logafter .uname").html($.cookie("UserNameResourcesPlatform"));
+        $("#liHeaderMy").show();
+    }
+    else {
+        $(".logafter").hide();
+        $(".logpre").show();
+    }
+</script>

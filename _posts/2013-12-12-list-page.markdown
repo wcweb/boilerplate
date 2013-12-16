@@ -1,0 +1,10 @@
+---
+layout: pages/list-page
+title:  "List page"
+date:   2013-12-12 12:16:05
+categories: boiler 
+base_url: "../../../../../../"
+---
+
+<h1 id="list_page">List Page</h1>
+<p>说明在这里。</p>

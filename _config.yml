@@ -1,0 +1,28 @@
+name: Boilerplate Site 4 AVA
+markdown: redcarpet
+pygments: true
+
+safe : false
+
+
+# Permalinks
+permalink:        pretty
+
+# Server
+destination:      ./_dest_pages
+exclude:          [".editorconfig", ".gitignore", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "less","examples","js","plugins"]
+port:             4321
+
+# Custom vars
+current_version:  0.1.2
+repo:             https://github.com/wcweb/Boilerplate
+
+download_source:  https://github.com/wcweb/Boilerplate/v0.1.2.zip
+download_dist:    https://github.com/wcweb/Boilerplate/releases/download/v3.0.2/bootstrap-3.0.2-dist.zip
+
+blog:             http://wcweb.us
+expo:             http://blog.wcweb.us
+
+cdn_css:          //netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css
+cdn_theme_css:    //netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css
+cdn_js:           //netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js

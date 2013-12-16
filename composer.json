@@ -1,0 +1,21 @@
+{
+    "name": "wcweb/bolierplate"
+  , "description": "module for design html bolierplate"
+  , "keywords": ["bolierplate", "css"]
+  , "homepage": "http://wcweb.us"
+  , "authors": [
+      {
+        "name": "Ian Chan",
+        "email": "wcrh35@gmail.com"
+      }
+    ]
+  , "support": {
+      "issues": "https://github.com/wcrh35/bolierplate/issues"
+    }
+  , "license": "Apache-2.0"
+  , "extra": {
+      "branch-alias": {
+          "dev-master": "1.0.x-dev"
+      }
+  }
+}

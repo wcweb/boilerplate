@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width">
+  {% include boil/boil-header.html %}
+
+
+</head>
+<body>
+{% include boil/boil-head-nav.html %}
+<div class="content" role="main">
+    <div class="container">
+      {{ content }}
+    </div>
+</div>
+
+  {% include boil/boil-footer.html %}
+</body>
+</html>
