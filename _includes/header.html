@@ -12,16 +12,16 @@
   {% endif %}
 </title>
 
+
 <!-- Bootstrap core CSS -->
-<link href="{{ page.base_url }}dist/css/bootstrap.min.css" rel="stylesheet">
+{% stylesheet bootstrap %}
 
 <!-- Documentation extras -->
-<link href="{{ page.base_url }}docs-assets/css/docs.css" rel="stylesheet">
-<link href="{{ page.base_url }}docs-assets/css/pygments-manni.css" rel="stylesheet">
+{% stylesheet vendor/doc-assets/docs %}
+{% stylesheet vendor/doc-assets/pygments-manni %}
 
-<link href="{{ page.base_url }}dist/css/boilerplate.css" rel="stylesheet">
 
-<!-- <link href="{{ page.base_url }}docs-assets/css/old_app.css" rel="stylesheet">-->
+
 <!--[if lt IE 9]><script src="{{ page.base_url }}docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->

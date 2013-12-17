@@ -1,0 +1,406 @@
+/* here is overries.less */
+
+/*!
+ * Typeography
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft YaHei";
+	line-height: 1.4;
+	font-size: 1em;
+}
+
+p {
+margin: 0 0 9px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, 'microdoft yahei', '微软雅黑';
+font-size: 13px;
+line-height: 18px;
+}
+p small {
+font-size: 11px;
+color: #999999;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin: 10px 0;
+}
+
+
+.forms {
+text-align: left;
+}
+form ul,
+form li{
+    list-style: none;
+}
+.forms .items .item label {
+    display: inline-block;
+    text-align: right;
+    margin-left: 50px;
+    width: 100px;
+    *display: inline;
+    /* IE7 inline-block hack */
+    *zoom: 1;
+}
+
+.forms .items .indent {
+margin-left: 150px;
+}
+
+
+
+form .label {
+    width: 25%;
+    display: inline-block;
+    text-align: right;
+    background: transparent;
+    color:@literal-color;
+    text-shadow:none;
+}
+
+.label {
+padding: 1px 3px 2px;
+/*  font-size: 9.75px;*/
+font-weight: bold;
+/*  color: #ffffff;
+text-transform: uppercase;
+background-color: #999999;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;*/
+}
+
+.zlabel, .badge {
+font-size: 12px;
+font-weight: bold;
+line-height: 14px;
+vertical-align: baseline;
+white-space: nowrap;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+background: #ececec;
+}
+
+.zlabel {
+padding: 1px 4px 2px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+a.zlabel:hover, a.badge:hover {
+text-decoration: none;
+cursor: pointer;
+}
+
+form li.action {
+padding-left: 200px;
+}
+
+select {
+background-color: #FFFFFF;
+width: auto;
+}
+
+.navbar-inner{
+    background:none;
+    background-color: #0085CC;
+}
+.navbar .nav > li > a {
+    color:#cbcbcb;
+    text-shadow:none;
+}
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover {
+color: #ffffff;
+background-color: #FFC000;
+    box-shadow:none;
+}
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    color: #ffffff;
+}
+.navbar-search .search-query {
+    background: #fff url('img/zoom.png') no-repeat 90% center;
+    .transition(none);
+    box-shadow: none;
+    .border-radius(0);
+    border: 1px solid #2278a9;
+
+}
+
+
+.nav-list .caret-plus {
+background-image: url("img/glyphicons-halflings-white.png");
+background-position: -408px -96px;
+margin: 0px;
+border: none;
+}
+
+/*
+ *  Pagination
+ */
+
+.data .pagination,
+.box .pagination,
+#videobodycommentlist .pagination {
+    float: right;
+    margin-right: 10px;
+    min-width: 300px;
+}
+
+
+/*
+ *  Tabs
+ */
+
+
+
+
+.tabs,
+.pills {
+margin: 0;
+padding: 0;
+list-style: none;
+zoom: 1;
+}
+
+.tabs:before,
+.pills:before,
+.tabs:after,
+.pills:after {
+display: table;
+content: "";
+zoom: 1;
+}
+
+.tabs:after,
+.pills:after {
+clear: both;
+}
+
+.tabs > li,
+.pills > li {
+float: left;
+}
+.nav-pills li input {
+    margin: 5px 10px;
+}
+.nav-tabs > li > a {
+    .border-radius(0);
+}
+.tabs > li > a,
+.pills > li > a {
+display: block;
+}
+.tabs {
+    margin-left: 10px;
+    /*border-color: #ddd;*/
+    border-style: solid;
+    border-width: 0 0 1px;
+    /*border: none;*/
+}
+
+.tabs > li {
+position: relative;
+margin-bottom: -1px;
+}
+
+.tabs > li > a {
+padding: 0 10px;
+margin-right: 0px;
+line-height: 34px;
+border-top: 4px solid #DDD;
+border-bottom-color: transparent;
+/*
+-webkit-border-radius: 4px 4px 0 0;
+-moz-border-radius: 4px 4px 0 0;
+border-radius: 4px 4px 0 0;
+*/
+}
+
+.tabs > li > a:hover {
+text-decoration: none;
+color: #7F151A;
+border-color:none;
+border-top: 4px solid #FFC000;
+line-height:39px;
+/*border-color: #7F151A #7F151A #ddd;*/
+//background-color: #f1f0f0;
+}
+
+.tabs .active > a,
+.tabs .active > a:hover {
+color: #0088cc;
+background: #fff;
+border-top: 4px solid #0088cc;
+border-bottom-color: transparent;
+cursor: default;
+}
+
+.tabs .menu-dropdown,
+.tabs .dropdown-menu {
+top: 35px;
+border-width: 1px;
+-webkit-border-radius: 0 6px 6px 6px;
+-moz-border-radius: 0 6px 6px 6px;
+border-radius: 0 6px 6px 6px;
+}
+
+.tabs a.menu:after,
+.tabs .dropdown-toggle:after {
+border-top-color: #999;
+margin-top: 15px;
+margin-left: 5px;
+}
+
+.tabs li.open.menu .menu,
+.tabs .open.dropdown .dropdown-toggle {
+border-color: #999;
+}
+
+.tabs li.open a.menu:after,
+.tabs .dropdown.open .dropdown-toggle:after {
+border-top-color: #555;
+}
+
+.pill-body {
+padding: 10px;
+margin: 0 auto;
+}
+
+.pills a {
+margin: 5px 3px 5px 0;
+padding: 0 15px;
+line-height: 30px;
+text-shadow: 0 1px 1px #ffffff;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+}
+
+.pills a:hover {
+color: #ffffff;
+text-decoration: none;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+background-color: #00438a;
+}
+
+.pills .active a {
+color: #ffffff;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+background-color: #0069d6;
+}
+
+.pills-vertical > li {
+float: none;
+}
+
+.tabwrap {
+background: #fff;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane,
+.tab-content > div,
+.pill-content > div {
+display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+display: block;
+}
+
+.pill-content {
+/*  border:1px solid #cbcbcb;*/
+border-top: none;
+background-color: #fff;
+overflow: hidden;
+}
+
+.hor-tabs {
+top: 0;
+left: 0;
+}
+
+.hor-tabs .tabs {
+border-width: 0;
+float: left;
+}
+
+.hor-tabs .tabs li {
+display: block;
+clear: both;
+margin-bottom: 15px;
+float: left;
+}
+
+.hor-content {
+margin-left: 147px;
+height: 450px;
+/*border-top: 1px solid #DDD;*/
+}
+
+.hor-tabs .tabs > li {
+position: relative;
+width: 150px;
+margin-right: -1px;
+}
+
+.hor-tabs .tabs > li > a {
+padding: 0 15px;
+margin-right: 2px;
+line-height: 34px;
+border: 1px solid #DDD;
+border-right-color: transparent;
+-webkit-border-radius: 4px 0 0 4px;
+-moz-border-radius: 4px 0 0 4px;
+border-radius: 4px 0 0 4px;
+}
+
+.hor-tabs .tabs > li > a:hover {
+text-decoration: none;
+color: #1a67cb;
+border-color: #1a67cb transparent #1a67cb #1a67cb;
+background: #fff;
+}
+
+.hor-tabs .tabs .active > a,
+.hor-tabs .tabs .active > a:hover {
+color: #808080;
+background: #fff;
+border: 1px solid #ddd;
+border-right-color: transparent;
+cursor: default;
+}
+
+.hor-tabs .tabs > li > a .icon_play {
+line-height: 25px;
+margin-top: 10px;
+margin-right: 10px;
+}
+
+.hor-content .searchList li {
+width: 80px;
+}
+
+.hor-content .searchList {
+margin-bottom: 15px;
+}
+
+
+
+.accordion {
+    margin-bottom: 0px;
+}

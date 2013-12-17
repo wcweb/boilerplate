@@ -1,23 +1,26 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="{{ page.base_url }}dist/js/bootstrap.js"></script>
-<script src="{{ page.base_url }}dist/js/boilerplate.js"></script>
 
-<script src="{{ page.base_url }}docs-assets/js/holder.js"></script>
+{% javascript vendor/jquery.1.9 %}
+{% javascript bootstrap %}
 
-<script src="{{ page.base_url }}docs-assets/js/application.js"></script>
+{% javascript vendor/doc-assets/holder %}
+{% javascript vendor/doc-assets/application %}
+
+
+
 
 {% if page.slug == "customize" %}
-<script src="{{ page.base_url }}docs-assets/js/less.js"></script>
-<script src="{{ page.base_url }}docs-assets/js/jszip.js"></script>
-<script src="{{ page.base_url }}docs-assets/js/uglify.js"></script>
-<script src="{{ page.base_url }}docs-assets/js/filesaver.js"></script>
-<script src="{{ page.base_url }}docs-assets/js/raw-files.js"></script>
-<script src="{{ page.base_url }}docs-assets/js/customizer.js"></script>
-{% endif %}
 
+{% javascript vendor/doc-assets/less %}
+{% javascript vendor/doc-assets/jszip %}
+{% javascript vendor/doc-assets/uglify %}
+{% javascript vendor/doc-assets/filesaver %}
+{% javascript vendor/doc-assets/raw-files %}
+{% javascript vendor/doc-assets/customizer %}
+
+{% endif %}
 <!-- Analytics
 ================================================== -->
 <script>

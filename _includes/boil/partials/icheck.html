@@ -1,0 +1,16 @@
+<h1 id="icheck">ICheck</h1>
+
+<input type="checkbox">
+<input type="checkbox" checked>
+<input type="radio" name="iCheck">
+<input type="radio" name="iCheck" checked>
+
+<script>
+$(document).ready(function(){
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_square-blue',
+    radioClass: 'iradio_square-blue',
+    increaseArea: '20%' // optional
+  });
+});
+</script>

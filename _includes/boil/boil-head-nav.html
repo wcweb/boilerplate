@@ -6,15 +6,15 @@
                 <div class=" banner">
                     <!-- span16 -->
                     <div class=" container  ">
-                        <a href="http://localhost:15148/index.html">
-                            <img src="img/images/logo.png" title="">
+                        <a href="{{ post.base_url }}">
+                            <img src="{% asset_path images/logo.png %}" title="">
                         </a>
                         <ul class="wellcome_tip">
                             <li style="" class="logpre">
-                                <a href="http://localhost:15148/signup.html" title="注册">注册</a> | <a id="headerLogin" href="#login" title="登录" onclick="document.getElementById('frmMiniLogin').submit();return false;">登录</a>
+                                <a href="#" title="注册">注册</a> | <a id="headerLogin" href="#login" title="登录" onclick="document.getElementById('frmMiniLogin').submit();return false;">登录  {{ post.categories }}</a>
                             </li>
 
-                            <li class="logafter " style="display: none;">欢迎, <a href="http://localhost:15148/my/index.html"></a>&nbsp; <a href="http://localhost:15148/logout.html" title="[注销]">[注销]</a></li>
+                            <li class="logafter " style="display: none;">欢迎, <a href="#"></a>&nbsp; <a href="#" title="[注销]">[注销]</a></li>
 
 
                         </ul>
@@ -36,20 +36,24 @@
 
 
                                         <li class="">
-                                            <a href="{{ post.base_url }}" title="首页">首页</a></li>
+                                            <a href="{{ post.base_url }}{{page.base_url}}" title="首页">{{ post.categories }}首页{{ post.base_url }}</a></li>
                                             {% for post in site.posts %}
                                               <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                                            {% endfor %}
+                                            
+                                            {% for page in site.pages %}
+                                              <li><a href="{{ post.url }}">{{ page.title }}</a></li>
                                             {% endfor %}
 
                                     </ul>
                                     <ul class="nav pull-right">
                                         <li>
-                                            <form id="frmMiniLogin" class="navbar-search " method="post" action="http://localhost:15148/login.html" style="display: none;">
+                                            <form id="frmMiniLogin" class="navbar-search " method="post" action="" style="display: none;">
                                                 <input type="hidden" name="SRC" value="/Album.aspx" style="display: none;">
                                             </form>
                                         </li>
                                         <li>
-                                            <form method="post" class="navbar-search " action="http://localhost:15148/proxy.html" id="frmHeadSearch">
+                                            <form method="post" class="navbar-search " action="" id="frmHeadSearch">
                                                 <input type="hidden" name="Key" value="SearchAlbum" style="display: none;">
                                                 <input type="hidden" name="Sort" value="1" style="display: none;">
                                                 <input type="text" name="SearchKeyWord" class="search-query span2" placeholder="Search">
